@@ -1,0 +1,49 @@
+<html>
+	<head>
+		   	<link rel="stylesheet" href="./main.css">
+
+		   	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    		<link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    		<meta name="description" content="Take a shot at being a train conductor on the renowned MTA">
+    		<meta property="og:image" content="./screenshot.png" />
+
+
+		    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.2.0/socket.io.js"></script>
+		    <script src="https://pixijs.download/release/pixi.js"></script>
+		    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+		    <script src ="./webscripts/enums.js"></script>
+	</head>
+	<body>
+
+			<div id="intro">
+				<h3>Keeping Track</h3>
+				<div id="rules">
+					In this game, the player serves as an assistant conductor on the MTA. 
+					Listen to your co-conductor for the train arrival cues, and then command passengers to exit the train when they’ve arrived at their stop. Try to correctly direct as many passengers before the train reaches the its final stop! If a passenger misses their stop, still guide them off asap to get more points!
+				</div>
+
+				<div id="start-container">
+					<button id="start">All Aboard!</button>
+				</div>
+			</div>
+
+			<div id="trains">🚂🚂🚂</div>
+
+			<div class="main-game">
+				<div id="player-speech" class="hidden">
+					<div id="spoken-words">You are saying: </div>
+					<div id="conductor-speech">The Conductor is saying:<div>
+				</div>
+			</div>
+
+			<div id="canvas-container"><hr><span></div>
+
+		<script src="./webscripts/assets.js"></script>
+		<script src ="./webscripts/main.js"></script>
+		<script src ="./webscripts/passenger.js"></script>
+		<script src ="./webscripts/pixi.js"></script>
+
+	</body>
+</html>
